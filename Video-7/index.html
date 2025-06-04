@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form's in html</title>
+</head>
+<body>
+    <h1>Fill Form</h1>
+    <form action="" method="post">
+        <div>
+            <label for="name">Enter your name hear : </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name hear" required autofocus>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="hobby" id="hobby" value="game">
+            <label for="hobby">game</label>
+        </div>
+        <div>
+            <label for="state">select state :</label>
+            <select name="state" id="state" value="gujrat">
+                <option value="gujrat">Gujrat</option>
+                <option value="delhi">Delhi</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <br>
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address hear"></textarea>
+        </div>
+
+    </form>
+</body>
+</html>
