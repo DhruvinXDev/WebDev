@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card making</title>
+    <style>
+        * {
+            background-color: lightgray;
+        }
+        .color{
+            background-color: white;
+            text-transform: capitalize;
+            
+        }
+
+        .Card {
+            margin: 25px;
+            padding: 10px;
+            border: 1px solid rgb(176, 171, 171);
+            border-radius: 15px;
+        }
+
+        .pic {
+            text-align: center;
+            
+            overflow: hidden;
+        }
+
+        .content {
+            border: 1px solid rgb(176, 171, 171);
+            border-radius: 9px;
+            background-color: rgb(250, 242, 242) ;
+            padding: 3px;
+            font-size: 13px;
+            margin: 2px;
+            color:rgb(141, 136, 136) ;
+        }
+        .text{
+            padding: 5px;
+            margin: 10px;
+        }
+        .dis{
+            font-size: 13px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .button{
+            background-color: white;
+            color: rgb(38, 38, 208);
+            text-align: center;
+            border: 1px solid;
+            padding: 2px;
+            border-radius: 10px;
+            
+        }
+        .button:hover{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8= -->
+    <div class="Card color">
+        <div class="pic color">
+            <image
+                src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                width="300px" style="border-radius: 15px;"></image>
+        </div>
+        <div class="text color">
+            <span class="content color">Nature</span>
+            <span class="content color">Lake</span>
+            <h2 class="color">Lorem ipsum dolor sit.</h2>
+            <p class="color dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum soluta dolorum exercitationem architecto aut deserunt? Esse quis totam nobis, aperiam culpa recusandae voluptate similique molestiae officia in nulla, atque porro saepe adipisci nihil quibusdam.</p>
+            <div class="color" style="text-align: center;"><span class="button">read more</span></div>
+        </div>
+    </div>
+</body>
+
+</html>
