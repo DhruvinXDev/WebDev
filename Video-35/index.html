@@ -5,17 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>more on css selector</title>
     <style>
-        box:first-child{
+        /* .box:first-child{
             background-color: yellow;
-        }
+        } */
+        /* .box::first-line{
+            background-color: aqua;
+        } */
+        /* .box:first-child:first-line
+        {
+            background-color: red;
+        } */
+         /* .box:nth-child(2){
+            background-color: blue;
+         } */
+          /* .box:nth-last-child(2){
+            background-color: pink;
+          } */
+          /* p, a, .box , .box:first-child{
+            color: red; multi seletor
+          } */
+         
+          .boxes::before{
+            content: "hello this is before text";
+            color: red;
+          }
+          .boxes::after{
+            content: "hello this is after text";
+            color: blue;
+          }
+          ::selection{
+            color: aqua;
+            background-color: black;
+          }
+          .box::first-letter{
+            color: peru;
+            font-size: 45px;
+          }
+          input::placeholder{
+            color: blue;
+          }
+          
     </style>
 </head>
 <body>
     <div class="boxes">
-        <div class="box">hello i am first div</div>
+        <div class="box">hello i am first div Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto corrupti maiores voluptas iste dolore? Pariatur voluptatem fugiat suscipit esse placeat aliquid minus, eius doloribus amet aperiam quos eveniet totam corporis officia architecto dolorum ab natus nemo assumenda non? Architecto ex omnis sunt atque, sapiente cum id ea impedit, officiis enim facere amet saepe quaerat corrupti.</div>
         <div class="box">hello i am second div</div>
         <div class="box">hello i am thred div</div>
         <div class="box">hello i am four div</div>
+        <input type="text" placeholder="type you name hear ">
     </div>
 </body>
 </html>
