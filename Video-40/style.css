@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav,  ul{
+    display: flex;
+    /* justify-content: flex-end; */
+}
+.content{
+    display: flex;
+}
+
+ ul li, .buy,.english {
+    list-style-type: none;
+    padding: 20px;
+    
+    
+}
+img{
+    padding: 12px;
+}
+
+nav{
+    gap: 480px;
+    border: 2px solid;
+}
+
+
+
+
