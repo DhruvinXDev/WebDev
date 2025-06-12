@@ -13,10 +13,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: Y-axis 8s alternate-reverse 1s infinite,X-axis 8s linear 1s infinite;
+    animation: animateX 3s linear infinite, animateY 1s ease-out infinite alternate;
+    /* animation: Y-axis 8s alternate-reverse 1s infinite,X-axis 8s linear 1s infinite; */
 }
 
-@keyframes X-axis {
+/* @keyframes X-axis {
     from{
 
     }
@@ -46,5 +47,25 @@
     100%
     {
         transform: translateY(0);
+    }
+} */
+
+@keyframes animateX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes animateY {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 100%;
     }
 }
