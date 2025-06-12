@@ -1,0 +1,50 @@
+.container {
+    position: relative;
+    height: 90vh;
+    width: 90vw;
+    background-color: blue;
+}
+
+.box {
+    height: 121px;
+    width: 121px;
+    background-color: red;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: Y-axis 8s alternate-reverse 1s infinite,X-axis 8s linear 1s infinite;
+}
+
+@keyframes X-axis {
+    from{
+
+    }
+    to
+    {
+        transform: translateX(80vw);
+    }
+}
+
+@keyframes Y-axis {
+    0%
+    {
+        transform: translateY(0);
+    }
+    25%
+    {
+        transform: translateY(-40vh);
+    }
+    50%
+    {
+        transform: translateY(0);
+    }
+    75%
+    {
+        transform: translateY(-40vh);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
