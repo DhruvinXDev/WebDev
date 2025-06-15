@@ -13,12 +13,14 @@
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_large.jpg);
     background-size: cover;
     background-position: center -17px;
+    position: relative;
 }
 
 .bg-o {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.702);
+    
 }
 
 nav {
@@ -43,9 +45,11 @@ nav {
     width: 124px;
     height: 32px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .sg {
+    cursor: pointer;
     width: 76.91px;
     height: 32px;
     background-color: red;
@@ -171,6 +175,7 @@ nav {
     border-radius: 5px;
     font-size: 23px;
     padding: 0 5px;
+    cursor: pointer;
 }
 
 .text h4{
@@ -180,4 +185,16 @@ nav {
 .text .in {
     display: flex;
     gap: 10px;
+}
+
+.bg-o .gra {
+    height: 8vh;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    /* border-radius: 70%; */
+    border-top-left-radius: 70% ;
+    border-top-right-radius: 70% ;
 }
