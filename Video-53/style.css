@@ -8,8 +8,7 @@
 }
 
 .bg-img {
-    width: 100vw;
-    height: 100vh;
+    height: 644px;
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_large.jpg);
     background-size: cover;
     background-position: center -17px;
@@ -17,10 +16,9 @@
 }
 
 .bg-o {
-    width: 100vw;
-    height: 100vh;
+    height: 644px;
     background-color: rgba(0, 0, 0, 0.702);
-    
+
 }
 
 nav {
@@ -79,23 +77,25 @@ nav {
 
 .bg-o .text {
     color: white;
-    height: 80vh;
+    height: 555px;
     text-align: center;
 }
 
 .bg-o .text h1 {
-    width: 588px;
-    height: 140px;
+    width: 80vw;
+    height: 25%;
     margin-bottom: 8px;
     font-size: 2em;
     margin: .67em 0;
     font-weight: 700;
+    margin-top: 0;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .bg-o .text h1 {
         font-size: 2rem;
         font-weight: 700;
+        width: 90vw;
     }
 }
 
@@ -103,6 +103,7 @@ nav {
     .bg-o .text h1 {
         font-size: 2.5rem;
         font-weight: 700;
+        width: 60vw;
     }
 }
 
@@ -111,12 +112,13 @@ nav {
         font-size: 3rem;
         font-weight: 900;
         margin-bottom: 1rem;
+        width: 40vw;
     }
 }
 
 .bg-o .text p {
-    width: 588px;
-    height: 25px;
+    width: 80vw;
+    height: 5%;
     margin-bottom: 16px;
     font-weight: 400;
 }
@@ -149,6 +151,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .text .email {
@@ -178,23 +181,76 @@ nav {
     cursor: pointer;
 }
 
-.text h4{
+.text h4 {
     padding-bottom: 15px;
     font-weight: 400;
 }
+
 .text .in {
     display: flex;
     gap: 10px;
+    margin-bottom: 50px;
 }
 
 .bg-o .gra {
     height: 8vh;
-    background-color: blue;
+    background-color: palevioletred;
     position: absolute;
     bottom: 0;
     z-index: 10;
     width: 100%;
-    /* border-radius: 70%; */
-    border-top-left-radius: 70% ;
-    border-top-right-radius: 70% ;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+}
+
+.bg-o .gra-2 {
+    height: 8vh;
+    background-color: black;
+
+    position: absolute;
+    bottom: -3px;
+    z-index: 12;
+    width: 100%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    background: linear-gradient(to bottom, rgb(14, 4, 148), rgb(0, 0, 0));
+}
+
+.main {
+    background-color: black;
+    color: white;
+    padding: 10px 140px;
+}
+
+.main .flex-poster {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.main .content {
+    width: 200px;
+    padding: 20px;
+    background: linear-gradient(136deg, rgba(33, 33, 99, 1) 0%, rgba(203, 96, 209, 0.32) 100%);
+    border-radius: 20px;
+}
+
+.main .content h3{
+    padding-bottom: 15px;
+}
+
+.main .faq .box
+{
+    width: 75vw;
+    background-color: rgb(44, 44, 44);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.main .faq .box img
+{
+    width: 40px;
 }
