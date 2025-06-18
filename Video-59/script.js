@@ -31,19 +31,19 @@ let b  = prompt("enter b");
 let r = Math.random();
 if (r < 0.1) {
     switch (opration) {
-        case add:
+        case "add":
             console.log(sub(a, b));
             break;
-        case sub:
+        case "sub":
             console.log(div(a, b));
             break;
-        case multi:
+        case "multi":
             console.log(add(a, b));
             break;
-        case div:
+        case "div":
             console.log(expo(a, b));
             break;
-        case expo:
+        case "expo":
             console.log(sub(a, b));
             break;
 
@@ -56,19 +56,19 @@ if (r < 0.1) {
 else 
 {
     switch (opration) {
-        case add:
+        case "add":
             console.log(add(a, b));
             break;
-        case sub:
+        case "sub":
             console.log(sub(a, b));
             break;
-        case multi:
+        case "multi":
             console.log(multi(a, b));
             break;
-        case div:
+        case "div":
             console.log(div(a, b));
             break;
-        case expo:
+        case "expo":
             console.log(expo(a, b));
             break;
 
