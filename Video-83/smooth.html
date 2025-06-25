@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smooth Scroll to Top</title>
+    <style>
+        .box {
+            height: 2000px;
+            position: relative;
+        }
+
+        .box button {
+            position:sticky;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body >
+    <div class="box">
+        <button onclick="smoothScrollToTop()">Go to Top</button>
+    </div>
+
+    <script>
+        function smoothScrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
